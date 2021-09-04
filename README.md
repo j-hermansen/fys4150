@@ -1,2 +1,1 @@
-# FYS4150
-Computational Physics
+# fys4150 - Computational Physics
