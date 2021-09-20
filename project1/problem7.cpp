@@ -2,11 +2,8 @@
 #include <fstream>
 using namespace std;
 
-int main() {
-
+double[] matrice_calculation(int n) {
     // 1. create arrays for vector a, b, c, g, and v
-    int n = 6;  // TODO: n can be taken as program argument
-
     double a[n-1];
     double b[n];
     double c[n-1];
@@ -64,5 +61,10 @@ int main() {
 
     MyFile.close();  // close the file
 
+}
 
+int main() {
+    int n = 6;  // TODO: n can be taken as program argument
+
+    matrice_calculation(n);
 }
