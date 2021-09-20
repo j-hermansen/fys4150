@@ -10,7 +10,7 @@ double u(int x) {
 int main() {
 
     // 1. Array with x-values
-    int x[] = {2,3,4,5,6,7};
+    double x[] = {0, 0.2, 0.4, 0.6, 0.8, 1};
 
     // 2. Calculate u(x) for all x-values in array
     double ux[sizeof(x)/sizeof(x[0])];
