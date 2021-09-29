@@ -7,7 +7,6 @@ using namespace arma;
 
 int main() {
 
-
     // Setup tridiagonal matrix
     int N = 6;
     int trig[N];
@@ -15,6 +14,7 @@ int main() {
     arma::Mat<double> T = arma::mat(N, N);
 
 
+    // TODO: fill tridiagonal matrix with correct values
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
             if (i == j) {
@@ -38,5 +38,5 @@ int main() {
     std::cout << "Eigval:\n" << eigval << "\n";
     std::cout << "Eigvec:\n" << eigvec << "\n";
 
-    // Solve Av = bv analytically
+    // TODO: Solve Av = bv analytically
 }
