@@ -32,13 +32,13 @@ int main(int argc, char *argv[]) {
     arma::Mat<double> T = arma::mat(6, 6).randn();
     int *row, *column;
 
-    std::cout << "num1 before:\n" <<  *row << "\n";
-    std::cout << "num2 before:\n" <<  *column << "\n";
+    std::cout << "row before:\n" <<  *row << "\n";
+    std::cout << "column before:\n" <<  *column << "\n";
 
     std::cout << "T:\n" <<  T << "\n";
 
     std::cout << "Largest:\n" << largestOffDiagonal(T, row, column) << "\n";
 
-    std::cout << "num1 after:\n" <<  *row << "\n";
-    std::cout << "num2 after:\n" <<  *column << "\n";
+    std::cout << "row after:\n" <<  *row << "\n";
+    std::cout << "column after:\n" <<  *column << "\n";
 }
