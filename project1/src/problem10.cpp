@@ -17,23 +17,24 @@ int main () {
     }
 
     // Write times to a file
-    ofstream MyFile("time-general-algorithm.txt");  // create and open file
+    ofstream myfile
+    myfile.open("time-general-algorithm.txt");  // create and open file
 
-    MyFile << "| Attempt | Time |";
-    MyFile << "| ------- | ---- |";
+    myfile << "| Attempt | Time |";
+    myfile << "| ------- | ---- |";
 
-    MyFile << "v^T = ( ";
+    myfile << "v^T = ( ";
     for (int i = 0; i < sizeof(timing_array)/sizeof(timing_array[0]); i++) {
         // write time to file
-        MyFile << "| ";
-        MyFile << i;
-        MyFile << " | ";
-        MyFile << timing_array[i];
-        MyFile << " |";
-        MyFile << "\n";
+        myfile << "| ";
+        myfile << i;
+        myfile << " | ";
+        myfile << timing_array[i];
+        myfile << " |";
+        myfile << "\n";
     }
 
-    MyFile.close();  // close the file
+    myfile.close();  // close the file
 
 
 

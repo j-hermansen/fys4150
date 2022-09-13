@@ -2,7 +2,7 @@
 #include <fstream>
 using namespace std;
 
-double[] matrice_calculation(int n) {
+double** matrice_calculation(int n) {
     // 1. create arrays for vector a, b, c, g, and v
     double a[n-1];
     double b[n];
